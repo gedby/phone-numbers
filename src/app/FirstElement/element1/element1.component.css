@@ -1,0 +1,137 @@
+.form-control {
+width: 200px;
+}
+
+.numberForm1{
+    height: 44px;
+    border-radius: 8px;
+    padding: 12px 12px;
+    border-width: 1px;
+    width: 338px;
+}
+
+.form {
+    position: absolute;
+    top: 197px; /* Distance from the top */
+    left: 213px; /* Distance from the left */
+    width: 990px;
+  }
+
+  .search-field {
+    /* display: flex; */
+    align-items: center; /* Vertically center the icon and input */
+    border-radius: 8px;
+  }
+  
+  .search-field mat-icon {
+    margin-right: 8px; /* Adjust as needed to add space between icon and input */
+  }
+
+  .line {
+    border: 1px solid #E20074;
+    width: 100%;
+  }
+
+  .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .add-row-button {
+    position: absolute;
+    width: 108px;
+    height: 44px;
+    padding: 12px 0px; /* Adjust padding as needed */
+    background-color: #E20074; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    margin-left: auto; /* Push the button to the right */
+  }
+
+.add-row-button:hover {
+    background-color: #730e50; /* Change background color on hover */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points or dots */
+}
+
+.header {
+  font: Inter;
+  display: flex;
+  color: #757575;
+  size: 16px;
+  line-height: 22px;
+  height: 34px;
+  
+  align-items: center;
+}
+
+.header h4:last-child {
+  margin-left: 150px; /* Add margin to create space */
+}
+
+.h3 {
+  font: Inter;
+  size: 20px;
+  line-height: 28px;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.h4 {
+  font: Inter;
+  size: 16px;
+  line-height: 22px;
+
+}
+
+.info {
+  font: Inter;
+  text-align: center;
+  top: -5px;
+  position: relative;
+  color: #757575;
+  line-height: 20px;
+}
+
+.header {
+  display: flex;
+}
+
+.name {
+  margin-left: -2%;
+  color: #E20074;
+  font: Inter;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+
+.phoneNumber {
+  position: absolute; 
+  left: 200px; 
+  margin-bottom: 30px;
+}
+
+.phone.details {
+  position: relative;
+}
+
+hr {
+  top: 40px; 
+}
+
+.line2 {
+  margin-left: -4%;
+}
+
+.columnName{
+  margin-bottom: -20px;
+}

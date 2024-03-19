@@ -1,0 +1,78 @@
+.form-control {
+    width: 200px;
+    }
+    
+     .numberForm1{
+        height: 44px;
+        border-radius: 8px !important;
+        padding: 12px 12px;
+        border-width: 1px;
+        gap:24px;
+        padding: 12px, 12px;
+        margin-right: 4px;
+        margin-bottom: 24px;
+        width: 338px;
+    }
+
+    .form {
+        position: absolute;
+        top: 197px; 
+        left: 213px; 
+        width: 984px;
+      }
+
+      .add-row-button {
+        position: absolute;
+        width: 108px;
+        height: 44px;
+        padding: 12px 0px; 
+        background-color: #E20074; 
+        color: #fff; 
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .add-row-button[disabled] {
+        opacity: 0.5; 
+        cursor: not-allowed; 
+      }
+    
+    .add-row-button:hover {
+        background-color: #730e50; 
+    }
+
+    .button-plus{
+        background-color: #E20074;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        width: 51px;
+        height: 44px;
+        padding: 12px 0px; 
+        margin-left: 10px;
+        font-weight: bold;
+    }
+
+    .button-plus:hover{
+      background-color: #730e50; 
+  }
+    
+  .mat-input-element:focus {
+    outline: none;
+  } 
+    
+h4 {
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 12px;
+}
+
+.mat-error {
+  margin-top: 12px; 
+}

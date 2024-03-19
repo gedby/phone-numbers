@@ -1,0 +1,29 @@
+
+<div class="form">
+  <h4>Add Number</h4>
+  <form [formGroup]="phoneNumberForm">
+      <input class="numberForm1" matInput formControlName="name" placeholder="Name" required>
+      <div>
+      <mat-error class="errorMessage" *ngIf="phoneNumberForm.get('name')?.invalid && phoneNumberForm.get('name')?.touched">Field is mandatory</mat-error>
+    </div>
+    <div formArrayName="phoneNumbers">
+      <div *ngFor="let control of phoneNumbers.controls; let i = index" class="phone-number">
+        <div style="display: flex;">
+            <input class="numberForm1" matInput [formControlName]="i" placeholder="Phone Number" required>
+            <div>
+          <button class="button-plus" mat-icon-button color="warn" *ngIf="i === phoneNumbers.controls.length - 2" (click)="removePhoneNumber(i)">
+            <mat-icon>-</mat-icon>
+          </button>
+        </div>
+          <button class="button-plus" mat-icon-button *ngIf="i === phoneNumbers.controls.length - 1" (click)="addPhoneNumber()">
+            <mat-icon>+</mat-icon>
+          </button>
+        </div>
+        <div>
+          <mat-error class="errorMessage" *ngIf="phoneNumberForm.get('phoneNumbers')?.get(i.toString())?.invalid && phoneNumberForm.get('phoneNumbers')?.get(i.toString())?.touched">Field is mandatory</mat-error>
+        </div>
+      </div>
+    </div>
+  </form>
+  <button class="add-row-button" mat-raised-button color="primary" [disabled]="phoneNumberForm.invalid" (click)="savePhoneNumber()">Add row</button>
+</div>

@@ -1,0 +1,42 @@
+
+<div class="form"> 
+  <div>
+    <h3>Phone numbers</h3>
+  </div>
+  <div>
+    <h4>Search:</h4>
+  </div>
+   <!-- <button class="add-row-button" (click)="onSelect()">Add row</button>  -->
+   <button class="add-row-button" (click)="navigateToPhoneNumberForm()">Add row</button> 
+  <input type="text" class="numberForm1" placeholder="Name" [(ngModel)]="searchQuery" (keyup.enter)="filterData()">
+    <div class="header">
+      <h4 class="columnName">Name</h4>
+      <h4 class="columnName">Phone Numbers</h4>
+    </div>
+    <hr class="line">
+    <div *ngIf="!showFilteredData; else filteredDataSection">
+    <ul *ngIf="phoneNumbers.length > 0; else noDataFound"> 
+      <li *ngFor="let phone of phoneNumbers" class="phone-details">
+        <span class="name">{{ phone.name }}</span> 
+        <span class="phoneNumber">{{ phone.phoneNumber }}</span><hr class="line2">
+      </li>
+    </ul>
+    <ng-template #noDataFound>
+      <p class="info">No numbers available.</p>
+    </ng-template>
+  </div>
+  
+  <ng-template #filteredDataSection>
+    <div>
+    <ul *ngIf="filteredPhoneNumbers.length > 0; else noFilteredDataFound"> 
+      <li *ngFor="let phone of filteredPhoneNumbers">
+        <span class="name">{{ phone.name }}</span>
+         <span class="phoneNumber">{{ phone.phoneNumber }}</span><hr class="line2">
+      </li>
+    </ul>
+    </div>
+    <ng-template #noFilteredDataFound>
+      <p class="info">No numbers available.</p>
+    </ng-template>
+  </ng-template>
+</div>

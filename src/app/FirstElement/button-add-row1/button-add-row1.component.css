@@ -1,0 +1,16 @@
+.add-row-button {
+    position: absolute;
+    width: 108px;
+    height: 44px;
+    padding: 12px 0px; /* Adjust padding as needed */
+    background-color: #E20074; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+.add-row-button:hover {
+    background-color: #730e50; /* Change background color on hover */
+}
+  
